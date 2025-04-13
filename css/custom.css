@@ -45,7 +45,7 @@
 	--primary-color			: #0E384C;
 	--secondary-color		: #EFF8FF;
 	--text-color			: #527282;
-	--accent-color			: #1E84B5;
+	--accent-color			: #0085e9;
 	--white-color			: #FFFFFF;
 	--divider-color			: #FFFFFF1F;
 	--dark-divider-color	: #0E384C1A;
@@ -329,7 +329,7 @@ body{
 	max-width: 66px;
 	transform: translate(-50%, -50%);
 }
-
+#loading-icon img{max-width: 70px;filter: invert(1) brightness(26);}
 @keyframes rotate-loading{
 	0%{
 		transform: rotate(0deg);
@@ -384,7 +384,7 @@ body{
 }
 
 .section-title h1{
-	font-size: 44px;
+	/* font-size: 44px; */
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -683,7 +683,7 @@ header.main-header .header-sticky.active{
 	background: var(--secondary-color) url('../images/hero-bg.svg') no-repeat;
 	background-position: center center;
 	background-size: auto;
-	padding: 50px 0 0;
+	padding: 50px 0;
 }
 
 .hero-content{
@@ -1606,9 +1606,10 @@ header.main-header .header-sticky.active{
 }
 
 .why-choose-image{
-	position: relative;
+	position: relative;height: 330px;
 	z-index: 1;
 }
+.why-choose-image figure,.why-choose-image figure img{height: 100%;}
 
 /************************************/
 /***     09. How It Work Css	  ***/
@@ -2411,16 +2412,18 @@ footer.main-footer{
 .expertise-experience-body ul{
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
+    margin: 0;padding-left: 10px;
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .expertise-experience-body ul li{
     position: relative;
-    width: calc(50% - 10px);
-    font-weight: 600;
+    /* width: calc(50% - 10px); */
+    /* font-weight: 600; */
+	line-height: 21px;margin-bottom: 13px;
+	font-size: 14px;
     color: var(--primary-color);
     text-transform: capitalize;
     padding-left: 30px;

@@ -2,5 +2,28 @@ a.navbar-brand {width: 140px;}
 a{color: #527282;;}
 .footer-logo {margin-bottom: 0;}
 .footer-logo img{filter: invert(1) brightness(10);}
+.how-it-work-img img{object-fit: fill;}
+.page-header-box ol .breadcrumb-item+.breadcrumb-item::before{content: "/" !important;}
+.our-services {background: #eff8ff;}
+.our-services.buyer1 {background: #fff;}
+.expertise-experience{padding-bottom: 5vw;
+    .one{}
+    .two{}
+    .three{}
+}
+.vit-row{
+    .swiper-slide{
+        img{object-fit: contain;}
+    }
+    .team-content h3 a{color: #000;opacity: .7;font-size: 18px;}
+    .team-content h3 a:hover{opacity: 1;}
+}
 @media (min-width: 1200px) {
+    .vit-row{justify-content: center;}
+}
+@media (max-width: 992px) {
+    .expertise-experience.one .row{flex-direction: column-reverse;}
+    .expertise-experience.one .row .expertise-experience-content{margin-top: 30px;}
+    .expertise-experience.two .row .expertise-experience-content{margin-top: 30px;}
+    .expertise-experience.buyer2 .row .expertise-experience-content{margin-top: 30px;}
 }
