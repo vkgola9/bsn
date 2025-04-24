@@ -18,6 +18,9 @@ a{color: #527282;;}
     .team-content h3 a{color: #000;opacity: .7;font-size: 18px;}
     .team-content h3 a:hover{opacity: 1;}
 }
+.how-it-work.pt-0{
+    .how-it-work-img{position: sticky;top: 0;left: 0;;}
+}
 @media (min-width: 1200px) {
     .vit-row{justify-content: center;}
 }
