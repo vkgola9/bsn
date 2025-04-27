@@ -1,43 +1,47 @@
+/* theme content changed work--- Vinay Gola UI Developer 21-03-2025  vkgola9 */
 $(document).ready(function () {
-//   $(".caro1").owlCarousel({
-//     loop: true,
-//     autoplay: true,
-//     autoTimeOut: 1000,
-//     items: 1,
-//     nav: false,
-//     dots: false,
-//     // lazyLoad: true,
-//     autoplayHoverPause: false,
-//     // animateOut: "slideInDown",
-//     // animateIn: "fadeOut",
-//     // onInitialize: resetProgressBar,
-//     // onInitialized: resetProgressBar,
-//     // onTranslate: resetProgressBar,
-//     // onTranslated: startProgressBar,
-//     touchDrag: true,
-//     mouseDrag: true,
-//     navText: [
-//       "<i class='fa-solid fa-chevron-left'></i>",
-//       "<i class='fa-solid fa-chevron-right'></i>",
-//     ],
-//   });
-//   function startProgressBar() {
-//     // apply keyframe animation
-//     $(".slide-progress").css({
-//       width: "100%",
-//       transition: "width 5000ms"
-//     });
-//   }
-//   function resetProgressBar() {
-//     $(".slide-progress").css({
-//       width: 0,
-//       transition: "width 0s"
-//     });
-//   }
+  $('a[href="#"]').click(function (e) {
+    e.preventDefault();
+  });
+  //   $(".caro1").owlCarousel({
+  //     loop: true,
+  //     autoplay: true,
+  //     autoTimeOut: 1000,
+  //     items: 1,
+  //     nav: false,
+  //     dots: false,
+  //     // lazyLoad: true,
+  //     autoplayHoverPause: false,
+  //     // animateOut: "slideInDown",
+  //     // animateIn: "fadeOut",
+  //     // onInitialize: resetProgressBar,
+  //     // onInitialized: resetProgressBar,
+  //     // onTranslate: resetProgressBar,
+  //     // onTranslated: startProgressBar,
+  //     touchDrag: true,
+  //     mouseDrag: true,
+  //     navText: [
+  //       "<i class='fa-solid fa-chevron-left'></i>",
+  //       "<i class='fa-solid fa-chevron-right'></i>",
+  //     ],
+  //   });
+  //   function startProgressBar() {
+  //     // apply keyframe animation
+  //     $(".slide-progress").css({
+  //       width: "100%",
+  //       transition: "width 5000ms"
+  //     });
+  //   }
+  //   function resetProgressBar() {
+  //     $(".slide-progress").css({
+  //       width: 0,
+  //       transition: "width 0s"
+  //     });
+  //   }
 
 
-   // swiper slider
-   var thumb = new Swiper('.mySwiper', {
+  // swiper slider
+  var thumb = new Swiper('.mySwiper', {
     loop: true,
     spaceBetween: 10,
     slidesPerView: 8,
@@ -88,29 +92,30 @@ $(document).ready(function () {
     }
   })
 });
-(function($) {
+(function ($) {
 
-	"use strict";
+  "use strict";
 
-	var fullHeight = function() {
+  var fullHeight = function () {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
+    $('.js-fullheight').css('height', $(window).height());
+    $(window).resize(function () {
+      $('.js-fullheight').css('height', $(window).height());
+    });
 
-	};
-	// fullHeight();  
+  };
+  // fullHeight();  
 
-	$(".toggle-password").click(function() {
+  $(".toggle-password").click(function () {
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
 
-	  $(this).toggleClass("fa-eye fa-eye-slash");
-	  var input = $($(this).attr("toggle"));
-	  if (input.attr("type") == "password") {
-	    input.attr("type", "text");
-	  } else {
-	    input.attr("type", "password");
-	  }
-	});
+
 
 })(jQuery);
